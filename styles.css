@@ -1,0 +1,40 @@
+h1 {
+    color: CornflowerBlue;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  table {
+    color: DarkSlateGray;
+    font-family: 'Arial', sans-serif;
+    width: 75%;
+  }
+  
+  td {
+    border-bottom: 2px dotted DarkSlateGray;
+  }
+  
+  tr:nth-child(even) {background: #DCDCDC}
+  
+  tr:nth-child(odd) {background: #FFF}
+  
+  th {
+    color: White;
+    background-color: LightCoral;
+    font-size: 18px;
+    font-family: 'Georgia', sans-serif;
+    letter-spacing: 0.5px;
+    height: 40px;
+  }
+  
+  .selector {
+    color: LightSeaGreen;
+  }
+  
+  .example {
+    color: LightSeaGreen;
+  }
+  
+  .mono {
+    font-family: 'Space Mono', monospace;
+  }

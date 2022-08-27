@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selectors</title>
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>CSS Selectors</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="selector">Univeral Selector</td>
+                    <td>Applies to all elements in the document</td>
+                    <td><p class="example">* {}</p><p>Targets all elements on the page</p></td>
+                </tr>
+                <tr>
+                    <td class="selector">Type Selector</td>
+                    <td>Matches element names</td>
+                    <td><p class="example">h1, h2, h3 {}</p><p>Targets the &lt;h1&gt;, &lt;h2&gt;, and &lt;h3&gt; elements</p></td>
+                </tr>
+                <tr>
+                    <td class="selector">Class Selector</td>
+                    <td>Mathces an element whose <span class="mono">class</span> attribute has a value that matches the one specified after the period (or full stop) symbol</td>
+                    <td><p class="example">.note {}</p>
+                        <p>Targets any element whose <span class="mono">class</span> attribute has a value of <span class="mono">note</span></p>
+                        <p class="example">p.note</p>
+                        <p>Targets any &lt;p&gt; elements whose <span class="mono">class</span> attribute has a value of <span class="mono">note</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="selector">ID Selector</td>
+                    <td>Matches an element whose <span class="mono">id</span> attribute has a value that matches the one specified after the pound or hash symbol</td>
+                    <td><p class="example">#introduction {}</p><p>Targets the element whose <span class="mono">id</span> attribute has a value of <span class="mono">introduction</span></p></td>
+                </tr>
+                <tr>
+                    <td class="selector">Child Selector</td>
+                    <td>Matches an element that is a direct child of another</td>
+                    <td><p class="example">li>a {}</p><p>Targets any &lt;a&gt; elements that are children of an &lt;li&gt; element (but not other &lt;a&gt; elements in the page)</p></td>
+                </tr>
+                <tr>
+                    <td class="selector">Descendant Selector</td>
+                    <td>Matches an element that is a descendant of another specified element (not just a direct child of that element)</td>
+                    <td><p class="example">p a {}</p><p>Targets any &lt;a&gt; elements that sit inside a &lt;p&gt; element, even if there are other elements nested between them</p></td>
+                </tr>
+                <tr>
+                    <td class="selector">Adjacent Sibling Selector</td>
+                    <td>Matches an element that is the next sibling of another</td>
+                    <td><p class="example">h1+p {}</p><p>Targets the first &lt;p&gt; element after any &lt;h1&gt; element (but not othter &lt;p&gt; elements)</p></td>
+                </tr>
+                <tr>
+                    <td class="selector">General Sibling Selector</td>
+                    <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+                    <td><p class="example">h1~p {}</p><p>If you had two &lt;p&gt; elements that are siblings of an &lt;h1&gt; element, this rule would apply to both</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
